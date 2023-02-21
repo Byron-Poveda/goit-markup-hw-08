@@ -11,9 +11,6 @@
   border: none;
   border-radius: 50%;
   outline: none;
-  position: absolute;
-  top: 22px;
-  right: 22px;
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -54,7 +51,7 @@
   fill: $color-primary;
 }
 .mobile-menu {
-  margin-bottom: 306px;
+  margin-bottom: 25%;
 }
 .mobile-menu__item:not(:last-child),
 .information-list__item:not(:last-child) {
@@ -105,7 +102,7 @@
 .mobile-networks__network:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .menu-toggle {
     display: none;
   }
