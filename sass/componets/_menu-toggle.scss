@@ -1,0 +1,112 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px;
+  background-color: $color-white;
+  z-index: 999;
+  transform: translateX(120%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-close {
+  position: absolute;
+  top: 21px;
+  right: 25.33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  fill: $color-primary-text;
+}
+.menu-close:hover,
+.menu-close:focus {
+  fill: $color-primary;
+}
+.mobile-menu {
+  margin-bottom: 306px;
+}
+.mobile-menu__item:not(:last-child),
+.information-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: $color-primary-text;
+}
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
+  color: $color-primary;
+}
+.information-list {
+  margin-bottom: 64px;
+}
+.information-list__number {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: $color-primary;
+}
+.information-list__email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: $color-secondary-text;
+}
+.mobile-networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-networks__network {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $color-primary;
+  padding: 0 10px;
+}
+.mobile-networks__network:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}

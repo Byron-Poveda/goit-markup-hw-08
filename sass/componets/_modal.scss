@@ -1,0 +1,136 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: unset;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 560px;
+  width: 528px;
+  border-radius: 4px;
+  background-color: $color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__exit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+  &__svg-exit {
+    fill: #000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__exit:hover &__svg-exit,
+  &__exit:focus &__svg-exit {
+    fill: $color-primary;
+  }
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  &__tittle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__label:hover &__svg {
+    fill: $color-primary;
+  }
+  &__container-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__label {
+    color: $color-secondary-text;
+  }
+  &__container-svg {
+    width: 42px;
+    height: 42px;
+    margin-top: 15px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__input {
+    width: 448px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 42px;
+    cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__input:hover {
+    border: 1px solid $color-primary;
+  }
+  &__label:focus-within &__input {
+    outline: 1px solid $color-primary;
+  }
+  &__label:focus-within &__svg {
+    fill: $color-primary;
+  }
+  &__label-comments {
+    margin-bottom: 20px;
+  }
+  &__textarea {
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__textarea:hover {
+    border: 1px solid $color-primary;
+  }
+  &__textarea:focus-within {
+    outline: 1px solid $color-primary;
+  }
+  &__textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

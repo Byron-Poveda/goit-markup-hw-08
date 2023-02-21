@@ -1,0 +1,36 @@
+.regular-clients__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27.6px;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    flex-basis: calc((100% - 138px) / 6);
+  }
+}
+.companies__link {
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: #afb1b8 solid 1px;
+  width: 170px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $color-gray-svg;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: $color-primary solid 1px;
+    fill: $color-primary;
+  }
+}

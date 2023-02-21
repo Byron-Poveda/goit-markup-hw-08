@@ -1,0 +1,30 @@
+.hero {
+  background: $background-blue-dark;
+  background-image: url(../images/hero-image.jpg);
+  background-repeat: no-repeat;
+  height: 600px;
+  text-align: center;
+  padding: 200px 0px 200px 0px;
+  &__tittle {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $color-white;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 41px;
+  }
+  &__button {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 10px 32px;
+  }
+}

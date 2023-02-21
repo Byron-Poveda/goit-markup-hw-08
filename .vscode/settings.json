@@ -1,0 +1,5 @@
+{
+  "debug.javascript.automaticallyTunnelRemoteServer": true,
+  "debug.javascript.autoAttachFilter": "always",
+  "liveServer.settings.port": 5502
+}

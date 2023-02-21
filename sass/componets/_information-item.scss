@@ -1,0 +1,30 @@
+.information-item {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  &__list:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__svg {
+    margin-right: 10px;
+  }
+}
+.information-item__link {
+  fill: rgba(117, 117, 117, 1);
+  color: $color-gray-with-shadow;
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  padding: 32px 0px 32px 0px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus .information-item__svg {
+    fill: $color-primary;
+  }
+}
+@media (max-width: 768px) {
+  .information-item {
+    display: none;
+  }
+}

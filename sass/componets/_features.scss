@@ -1,0 +1,33 @@
+.features-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  &__container {
+    background-color: $background-color-features;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-position: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 1.142;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-weight: 400;
+    line-height: 1.714;
+    color: $color-gray-svg;
+    margin-bottom: 0px;
+  }
+}

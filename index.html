@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>goit-markup-hw-08</title>
+  </head>
+    <body>
+      <header class="header">
+        <div class="header-index container">
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+            <a
+              href="#"
+              
+              rel="noopener noreferrer"
+              class="header-index__web links"
+              >Web Studio</a
+            >
+          <nav class="header-nav">
+            <ul class="header-nav__list list ">
+              <li class="header-nav__item items">
+                <a
+                  href="./index.html"
+                  rel="noopener noreferrer"
+                  class="header-nav__link links header-nav__link--active"
+                  >Estudio</a
+                >
+              </li>
+              <li class="header-nav__item items">
+                <a
+                  href="./portafolio.html"
+                  rel="noopener noreferrer"
+                  class="header-nav__link links"
+                  >Portafolio</a
+                >
+              </li>
+              <li class="header-nav__item items">
+                <a
+                  href="#"
+                  rel="noopener noreferrer"
+                  class="header-nav__link links"
+                  >Contactos</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="information-item list ">
+            <li class="items information-item__list">         
+              <a
+                href="mailto:info@devstudio.com"
+                
+                rel="noopener noreferrer"
+                class="links information-item__link"
+                ><svg class="information-item__svg" width="16" height="12"><use href="./images/svg.defs.svg#mail"></use></svg>info@devstudio.com</a
+              >
+            </li>
+            <li class="items information-item__list">
+              <a
+                href="tel:+525555296000"
+                
+                rel="noopener noreferrer"
+                class="links information-item__link"
+                ><svg class="information-item__svg" width="10" height="16" ><use href="./images/svg.defs.svg#phone"></use></svg>+5255 5529 6000</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <section class="hero section">
+          <div class="hero__container container">
+            <h1 class="hero__tittle">Soluciones eficaces para </br> su negocio</h1>
+            <button data-modal-open type="button" class="hero__button buttons pointer">Solicite nuestro servicio</button>
+            </div>
+          </div>
+        </section>
+        </div>
+        <section class="features section">
+          <div class="features__container container">
+            <h2 class="features__title hide">Caracteristicas</h2>
+            <ul class="features-list list">
+              <li class="features-list__item items">
+                <div class="features-list__container">
+                  <a class="links"><svg class="features-list__img" width="70" height="70"><use href="./images/svg.defs.svg#antenna"></use></svg></a></div>               
+                  <h3 class="features-list__title">
+                    Atención a los detalles
+                  </h3>
+                  <p class="features-list__description">
+                    Nos adentramos en todos los detalles y procesos de su negocio,
+                    para así desarrollar una solución a su medida.
+                  </p>
+              </li>
+              <li class="features-list__item items">
+                <div class="features-list__container">
+                  <a class="links"><svg class="features-list__img"  width="73" height="70"><use href="./images/svg.defs.svg#clock"></use>
+                  </svg></a></div>
+                  <h3 class="features-list__title">Puntualidad</h3>
+                  <p class="features-list__description">
+                    Con nosotros, usted puede sentirse seguro y protegido. Un
+                    principio importante de la empresa: respetar su tiempo y respetar
+                    los plazos acordados.
+                  </p>
+              </li>
+              <li class="features-list__item items">
+                <div class="features-list__container">
+                  <a class="links"><svg class="features-list__img"  width="70" height="70"><use href="./images/svg.defs.svg#diagram"></use>
+                  </svg></a></div>
+                  <h3 class="features-list__title">Planificación</h3>
+                  <p class="features-list__description">
+                    Usted podrá observar y participar en cada fase del desarrollo y
+                    aplicación de soluciones.
+                  </p>
+              </li>
+              <li class="features-list__item items">
+                <div class="features-list__container">
+                  <a class="links"><svg class="features-list__img"  width="70" height="70"><use href="./images/svg.defs.svg#astronaut"></use>
+                  </svg></a></div>
+                  <h3 class="features-list__title">Tecnología moderna</h3>
+                  <p class="features-list__description">
+                    Usamos herramientas innovadoras para resolver las tareas
+                    asignadas. Es hora de simplificar los procesos laborales.
+                  </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="works section">
+          <div class="works__container container">
+            <h2 class="works__title title--similar">A que nos dedicamos</h2>
+            <ul class="works-list list">
+              <li class="works-list__item items">
+                <div class="works-list__container">
+                  <img
+                    src="./images/computer.jpg"
+                    width="370"
+                    height="323"
+                    alt="Programando"
+                    class="works-list__img"
+                  />
+                  <div class="works-list__container-description">
+                    <p class="works-list__description">Aplicaciones de escritorio</p>
+                  </div>
+                </div>
+              </li>
+              <li class="works-list__item items">
+                <div class="works-list__container">
+                  <img
+                    src="./images/phone.jpg"
+                    width="370"
+                    height="323"
+                    alt="mackup"
+                    class="works-list__img"
+                  />
+                  <div class="works-list__container-description">
+                    <p class="works-list__description">Aplicaciones movil</p>
+                  </div>
+                </div>
+              </li>
+              <li class="works-list__item items">
+                <div class="works-list__container">
+                  <img
+                    src="./images/tablet.jpg"
+                    width="370"
+                    height="323"
+                    alt="diseño"
+                    class="works-list__img"
+                  />
+                  <div class="works-list__container-description">
+                    <p class="works-list__description">Soluciones de diseño</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="team section">
+          <div class="team__container container">
+            <h2 class="team__title title--similar">Nuestro Equipo</h2>
+            <ul class="member-team list">
+              <li class="member-team__item">
+                <img
+                  src="./images/andres.jpg"
+                  width="270"
+                  height="260"
+                  alt="Andres Cubo"
+                  class="member-team__img"
+                />
+                <div class="member-team__container">
+                  <h3 class="member-team__title">Andres Cubo</h3>
+                  <p class="member-team__description">Diseñador de Productos</p>
+                  <ul class="networks list">
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg"width= "44px" height= "44px"><use href="./images/svg.defs.svg#instagram"></use></svg></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg" width= "44px" height= "44px"><use href="./images/svg.defs.svg#twitter"></use></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg"width= "44px" height= "44px"><use href="./images/svg.defs.svg#facebook"></use></svg></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg" width= "44px" height= "44px"><use href="./images/svg.defs.svg#linkedin"></use></svg></a></li>
+                  </ul>            
+                </div> 
+              </li>
+              <li class="member-team__item">
+                <img
+                  src="./images/carla.jpg"
+                  width="270"
+                  height="260"
+                  alt="Carla Palacios"
+                  class="member-team__img"
+                />
+                <div class="member-team__container">
+                  <h3 class="member-team__title">Carla Palacios</h3>
+                  <p class="member-team__description">Desarrolladora Frontend</p>
+                  <ul class="networks list">
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg"width= "44px" height= "44px"><use href="./images/svg.defs.svg#instagram"></use></svg></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg" width= "44px" height= "44px"><use href="./images/svg.defs.svg#twitter"></use></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg"width= "44px" height= "44px"><use href="./images/svg.defs.svg#facebook"></use></svg></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg" width= "44px" height= "44px"><use href="./images/svg.defs.svg#linkedin"></use></svg></a></li>
+                  </ul> 
+                </div> 
+              </li>
+              <li class="member-team__item mario items">
+                <img
+                  src="./images/mario.jpg"
+                  width="270"
+                  height="260"
+                  alt="Mario Dorado"
+                  class="member-team__img"
+                />
+                <div class="member-team__container">
+                  <h3 class="member-team__title">Mario Dorado</h3>
+                  <p class="member-team__description">Marketing</p>
+                  <ul class="networks list">
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg"width= "44px" height= "44px"><use href="./images/svg.defs.svg#instagram"></use></svg></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg" width= "44px" height= "44px"><use href="./images/svg.defs.svg#twitter"></use></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg"width= "44px" height= "44px"><use href="./images/svg.defs.svg#facebook"></use></svg></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg" width= "44px" height= "44px"><use href="./images/svg.defs.svg#linkedin"></use></svg></a></li>
+                  </ul> 
+                </div> 
+              </li>
+              <li class="member-team__item pablo items">
+                <img
+                  src="./images/pablo.jpg"
+                  width="270"
+                  height="260"
+                  alt="Panlo Mijangos"
+                  class="member-team__img"
+                />
+                <div class="member-team__container">
+                  <h3 class="member-team__title">Pablo Mijangos</h3>
+                  <p class="member-team__description">Diseñador IU</p>
+                  <ul class="networks list">
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg"width= "44px" height= "44px"><use href="./images/svg.defs.svg#instagram"></use></svg></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg" width= "44px" height= "44px"><use href="./images/svg.defs.svg#twitter"></use></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg"width= "44px" height= "44px"><use href="./images/svg.defs.svg#facebook"></use></svg></svg></a></li>
+                    <li class="networks__item"><a href="#"  rel="noopener noreferrer" class="links networks__link"><svg class="pointer networks__svg" width= "44px" height= "44px"><use href="./images/svg.defs.svg#linkedin"></use></svg></a></li>
+                  </ul> 
+                </div> 
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="regular-clients section">
+          <div class="regular-clients__container container">
+            <h2 class="regular-clients__title">Clientes regulares</h2>
+            <ul class="companies list">
+              <li class="companies__item">
+                <a href="#"  rel="noopener noreferrer" class="links companies__link"><svg height= "55px" width= "100px" class="pointer companies__svg  yaco"><use href="./images/svg.defs.svg#yaco"></use>
+                </svg></a></li>
+              <li class="companies__item">
+                <a href="#"  rel="noopener noreferrer" class="links companies__link"><svg height= "55px" width= "100px" class="pointer companies__svg  company"><use href="./images/svg.defs.svg#company"></use>
+                </svg></a></li>
+              <li class="companies__item">
+                <a href="#"  rel="noopener noreferrer" class="links companies__link"><svg height= "55px" width= "100px" class="pointer companies__svg  company-two"><use href="./images/svg.defs.svg#company-two"></use>
+                </svg></a></li>
+              <li class="companies__item">
+                <a href="#"  rel="noopener noreferrer" class="links companies__link"><svg height= "55px" width= "100px" class="pointer companies__svg  foster-peters"><use href="./images/svg.defs.svg#foster-peters"></use>
+                </svg></a></li>
+              <li class="companies__item">
+                <a href="#"  rel="noopener noreferrer" class="links companies__link"><svg height= "55px" width= "100px" class="pointer companies__svg  brand"><use href="./images/svg.defs.svg#brand"></use>
+                </svg></a></li>
+                <li class="companies__item">
+                <a href="#"  rel="noopener noreferrer" class="links companies__link"><svg height= "55px" width= "100px" class="pointer companies__svg  tag-line"><use href="./images/svg.defs.svg#tag-line"></use>
+                </svg></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+        <footer class="footer">
+          <div class="footer__container container">
+            <div class="footer__container-web">
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                class="footer__web links"
+                >Web Studio</a
+              >
+              <address class="adress">
+                <ul class="adress__list list">
+                  <li class="adress__item items">
+                    <a
+                      href="https://goo.gl/maps/QMFkMFmCiuyDZ3nC7"
+                      
+                      rel="noopener noreferrer"
+                      class="adress__link links"
+                      >Calz. Ticomán 500, Ciudad de <br />
+                      México CDMX, México</a
+                    >
+                  </li>
+                  <li class="adress__item items">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      
+                      rel="noopener noreferrer"
+                      class="adress__contact links"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="adress__item items">
+                    <a
+                      href="tel:+525555296000"
+                      
+                      rel="noopener noreferrer"
+                      class="adress__contact links"
+                      >+52 55 5529 6000</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="find-us-in">
+              <p class="find-us-in__tittle">En cuentrenos en</p>
+              <ul class="find-us-in__list list">
+                    <li class="find-us-in__item"><a href="#"  rel="noopener noreferrer" class="links find-us-in__link"><svg width= "44px" height= "44px" class="pointer find-us-in__svg"><use href="./images/svg.defs.svg#instagram"></use></svg></a></li>
+                    <li class="find-us-in__item"><a href="#"  rel="noopener noreferrer" class="links find-us-in__link"><svg width= "44px" height= "44px" class="pointer find-us-in__svg" ><use href="./images/svg.defs.svg#twitter"></use></svg></a></li>
+                    <li class="find-us-in__item"><a href="#"  rel="noopener noreferrer" class="links find-us-in__link"><svg width= "44px" height= "44px" class="pointer find-us-in__svg" ><use href="./images/svg.defs.svg#facebook"></use></svg></a></li>
+                    <li class="find-us-in__item"><a href="#"  rel="noopener noreferrer" class="links find-us-in__link"><svg width= "44px" height= "44px" class="pointer find-us-in__svg" ><use href="./images/svg.defs.svg#linkedin"></use></svg></a></li>
+              </ul>
+            </div>
+            <div class="container-form">
+                <p class="container-form__tittle">SUSCRÍBASE al boletín informativo </p>
+              <form class="form-footer">
+                <label class="form-footer__label">
+                  <input class="form-footer__input" type="email" name="email" placeholder="Correo electrónico"/>
+                  <button class="form-footer__send pointer" type="submit">
+                    <div class="span-form">
+                      <span class="span-form__label">Suscríbase</span>
+                      <span class="span-form__label"><svg class="span-form__svg" width="24" height="24"><use href="./images/svg.defs.svg#send"></use></svg></span>
+                    </div>
+                  </button>
+                </label>
+              </form>
+            </div>
+          </div>
+        </footer>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button data-modal-close class="modal__exit pointer"><svg class="modal__svg-exit" width="11" height="11" ><use href="./images/svg.defs.svg#exit"></use></svg></button>
+            <form class="modal-form">
+                <p class="modal-form__tittle">Deje sus datos, nos contactaremos con usted</p>
+                <div class="modal-form__container">
+                  <label class="modal-form__label">
+                    <div class="modal-form__container-input">
+                      Nombre
+                      <input class="modal-form__input" type="text" name="username" placeholder=""/>
+                      <div class="modal-form__container-svg">
+                        <svg class="modal-form__svg" width="12" height="12"><use href="./images/svg.defs.svg#user"></use></svg>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="modal-form__label">
+                    <div class="modal-form__container-input">
+                      Teléfono
+                      <input class="modal-form__input" type="tel" name="phone-number" placeholder=""/>
+                      <div class="modal-form__container-svg">
+                        <svg class="modal-form__svg" width="13" height="13"><use href="./images/svg.defs.svg#tel"></use></svg>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="modal-form__label">
+                    <div class="modal-form__container-input">
+                      E-mail
+                      <input class="modal-form__input" type="email" name="email" placeholder=""/>
+                      <div class="modal-form__container-svg">
+                        <svg class="modal-form__svg" width="16" height="12"><use href="./images/svg.defs.svg#email"></use></svg>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <label class="modal-form__label-comments label">
+                  Comentarios
+                  <textarea class="modal-form__textarea" name="comments" rows="5" placeholder="Introduzca el texto"></textarea>
+                </label>
+                <div class="checkbox">
+                  <label for="checkbox-id" class="checkbox__label">
+                  <input type="checkbox" id="checkbox-id" class="checkbox__input" />
+                    <span class="checkbox__span-svg pointer">
+                      <svg class="checkbox__svg">
+                        <use href="./images/svg.defs.svg#checkbox"></use>
+                      </svg>
+                    </span>
+                    <span class="checkbox__span-description">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</span>
+                  </label>
+                </div>
+                <button class="checkbox__submit pointer" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-close js-close-menu">
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <ul class="mobile-menu list ">
+            <li class="mobile-menu__item items">
+              <a
+                href="./index.html"
+                rel="noopener noreferrer"
+                class="mobile-menu__link links"
+                >Estudio</a
+              >
+            </li>
+            <li class="mobile-menu__item items">
+              <a
+                href="./portafolio.html"
+                rel="noopener noreferrer"
+                class="mobile-menu__link links"
+                >Portafolio</a
+              >
+            </li>
+            <li class="mobile-menu__item items">
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                class="mobile-menu__link links"
+                >Contactos</a
+              >
+            </li>
+          </ul>
+          <ul class="information-list list ">
+            <li class="items information-list__item">
+              <a
+                href="tel:+525555296000"
+                
+                rel="noopener noreferrer"
+                class="links information-list__number"
+                >+5255 5529 6000</a
+              >
+            </li>
+            <li class="items information-list__item">         
+              <a
+                href="mailto:info@devstudio.com"
+                
+                rel="noopener noreferrer"
+                class="links information-list__email"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-networks list">
+            <li class="mobile-networks__network items"><a class="mobile-networks__link links">Instagram</a></li>
+            <li class="mobile-networks__network items"><a class="mobile-networks__link links">Twitter</a></li>
+            <li class="mobile-networks__network items"><a class="mobile-networks__link links">Facebook</a></li>
+            <li class="mobile-networks__network items"><a class="mobile-networks__link links">Linkedin</a></li>
+          </ul>
+        </div>
+    
+        <script
+          defer
+          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous"
+        ></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
+    </body>
+</html>
