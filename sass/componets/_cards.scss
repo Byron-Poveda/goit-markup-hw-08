@@ -2,6 +2,8 @@
   display: flex;
   gap: 25.5px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   &__tittle {
     font-weight: 700;
     font-size: 18px;
@@ -21,7 +23,7 @@
   &__information {
     overflow: hidden;
     position: relative;
-    width: 370px;
+    width: 450px;
     height: 294px;
   }
   &__appear {
@@ -40,23 +42,46 @@
     top: 0;
     left: 0;
     overflow: auto;
-    transform: translateY(100%);
+    transform: translateY(110%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link:focus &__appear {
     transform: translateY(0);
   }
 }
+.cards__tittle--no-margin {
+  margin-bottom: 0;
+}
 .cards__item {
   background: #ffffff;
   border: 1px solid #eeeeee;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 0px) / 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 418px;
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   &:hover .cards__appear {
     transform: translateY(0);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cards {
+    justify-content: flex-start;
+  }
+  .cards__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .cards__information {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+  .cards__information {
+    width: 370px;
   }
 }

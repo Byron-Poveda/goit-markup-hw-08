@@ -1,6 +1,6 @@
 .briefcase-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
   &__buttons {
@@ -20,4 +20,9 @@
 .button-active {
   color: $color-white;
   background-color: $color-primary;
+}
+@media screen and (min-width: 768px) {
+  .briefcase-list {
+    justify-content: center;
+  }
 }
