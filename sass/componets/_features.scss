@@ -3,7 +3,7 @@
   gap: 30px;
   flex-wrap: wrap;
   &__item {
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 0px) / 1);
   }
   &__container {
     background-color: $background-color-features;
@@ -11,7 +11,6 @@
     border-radius: 4px;
     background-position: center;
     margin-bottom: 30px;
-    width: 270px;
     height: 120px;
     display: flex;
     justify-content: center;
@@ -19,6 +18,7 @@
     align-content: center;
   }
   &__title {
+    text-align: center;
     font-weight: 700;
     line-height: 1.142;
     text-transform: uppercase;
@@ -29,5 +29,21 @@
     line-height: 1.714;
     color: $color-gray-svg;
     margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .features-list__title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  .features-list__title {
+    text-align: start;
   }
 }

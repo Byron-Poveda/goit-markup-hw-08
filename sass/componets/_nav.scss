@@ -9,10 +9,9 @@
 .header-index__web {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 28px;
   color: $color-primary;
-  margin-right: 93px;
   display: block;
   padding: 24px 0px 25px 0px;
   &:visited {
@@ -20,7 +19,7 @@
   }
 }
 .header-nav {
-  display: flex;
+  display: none;
   align-items: center;
   &__list {
     display: flex;
@@ -55,8 +54,18 @@
     background-color: $color-primary;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .header-nav {
-    display: none;
+    display: flex;
+  }
+  .header-index__web {
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-index__web {
+    font-size: 26px;
+    line-height: 1.192;
+    margin-right: 93px;
   }
 }

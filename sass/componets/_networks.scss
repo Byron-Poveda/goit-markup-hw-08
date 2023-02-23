@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   &__item {
-    flex-basis: calc((100% - 40px) / 4);
+    flex-basis: calc((100% - 170px) / 4);
   }
   &__link {
     fill: $color-gray-svg;
@@ -25,5 +25,10 @@
   }
   &__svg {
     border-radius: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .networks__link {
+    flex-basis: calc((100% - 40px) / 4);
   }
 }

@@ -1,13 +1,5 @@
 .information-item {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  &__list:not(:last-child) {
-    margin-right: 50px;
-  }
-  &__svg {
-    margin-right: 10px;
-  }
+  display: none;
 }
 .information-item__link {
   fill: rgba(117, 117, 117, 1);
@@ -23,8 +15,29 @@
     fill: $color-primary;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .information-item {
-    display: none;
+    display: block;
+    margin-left: 100px;
+    &__list:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &__svg {
+      margin-right: 8px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .information-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    &__list:not(:last-child) {
+      margin-right: 50px;
+    }
+    &__svg {
+      margin-right: 10px;
+    }
   }
 }

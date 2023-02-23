@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   &__item {
-    flex-basis: calc((100% - 138px) / 6);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 .companies__link {
@@ -20,7 +20,6 @@
   background-repeat: no-repeat;
   background-position: center;
   border: #afb1b8 solid 1px;
-  width: 170px;
   height: 81px;
   display: flex;
   justify-content: center;
@@ -32,5 +31,15 @@
   &:focus {
     border: $color-primary solid 1px;
     fill: $color-primary;
+  }
+}
+@media screen and (min-width: 768px) {
+  .companies__item {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .companies__item {
+    flex-basis: calc((100% - 5 * 30px) / 6);
   }
 }

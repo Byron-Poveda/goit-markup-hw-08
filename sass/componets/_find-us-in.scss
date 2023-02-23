@@ -1,11 +1,12 @@
 .find-us-in {
-  margin-right: 93px;
+  margin-bottom: 60px;
   &__tittle {
     color: $color-white;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
+    margin-bottom: 20px;
   }
   &__list {
     display: flex;
@@ -28,5 +29,16 @@
   &:hover,
   &:focus {
     background-color: $color-primary;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .find-us-in {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .find-us-in {
+    margin-right: 93px;
+    margin-bottom: 0;
   }
 }

@@ -1,20 +1,24 @@
 .hero {
   background: $background-blue-dark;
-  background-image: url(../images/hero-image.jpg);
+  background-image: url(../images/hero/hero-image__mobile.jpg);
   background-repeat: no-repeat;
-  height: 600px;
+  width: auto;
+  height: 400px;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  padding: 200px 0px 200px 0px;
+  background-size: cover;
   &__tittle {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.363;
+    font-size: 26px;
+    line-height: 42px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $color-white;
     max-width: 696px;
+    min-width: 360px;
     margin: 0 auto;
-    margin-bottom: 41px;
+    margin-bottom: 30px;
   }
   &__button {
     font-family: "Roboto", sans-serif;
@@ -26,5 +30,23 @@
     background-color: $color-primary;
     color: $color-white;
     padding: 10px 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: column;
+    background-image: url(../images/hero/hero-image__tablet.jpg);
+    background-size: cover;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    background-image: url(../images/hero/hero-image.jpg);
+    background-size: cover;
+  }
+  .hero__tittle {
+    font-size: 44px;
+    line-height: 1.363;
   }
 }
