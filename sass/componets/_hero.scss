@@ -39,6 +39,13 @@
     background-size: cover;
   }
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-image__tablet.jpg);
+  }
+}
 @media (min-width: 1200px) {
   .hero {
     height: 600px;
@@ -48,5 +55,12 @@
   .hero__tittle {
     font-size: 44px;
     line-height: 1.363;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-image.jpg);
   }
 }

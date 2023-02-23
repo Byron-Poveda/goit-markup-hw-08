@@ -16,6 +16,15 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
+.menu-burguer {
+  fill: $color-primary-text;
+  &:hover {
+    fill: $color-primary;
+  }
+}
+.menu-toggle:focus .menu-burguer {
+  fill: $color-primary;
+}
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
