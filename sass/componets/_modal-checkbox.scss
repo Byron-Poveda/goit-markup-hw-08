@@ -1,5 +1,5 @@
 .checkbox {
-  margin: 0px 0px 10px 10px;
+  margin: 0px 0px 31px 10px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -23,7 +23,7 @@
     border: 1px solid $color-primary;
   }
   &__span-svg {
-    width: 19px;
+    width: 20px;
     height: 15px;
     position: relative;
     top: 1px;
