@@ -23,8 +23,8 @@
     border: 1px solid $color-primary;
   }
   &__span-svg {
-    width: 20px;
-    height: 15px;
+    width: 30px;
+    height: 14px;
     position: relative;
     top: 1px;
     border: 1px solid #000;
@@ -51,5 +51,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .checkbox__span-svg {
+    width: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__span-svg {
+    width: 20px;
+    height: 15px;
   }
 }

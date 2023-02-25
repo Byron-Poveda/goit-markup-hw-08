@@ -16,8 +16,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 320px;
   padding: 40px;
   border-radius: 4px;
   background-color: $color-white;
@@ -50,8 +49,6 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   &__tittle {
     font-weight: 700;
     font-size: 20px;
@@ -59,11 +56,15 @@
     text-align: center;
     margin-bottom: 12px;
   }
-  &__container {
+  &__box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+  }
+  &__container-label {
+    width: 100%;
   }
   &__label:hover &__svg {
     fill: $color-primary;
@@ -90,8 +91,9 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__input {
-    width: 370px;
+    width: 100%;
     height: 40px;
+    margin-top: 4px;
     margin-bottom: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -112,11 +114,14 @@
     margin-bottom: 20px;
   }
   &__textarea {
-    width: 370px;
+    margin-top: 4px;
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
     resize: none;
+    outline: none;
+    font-size: 16px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__textarea:hover {
@@ -134,15 +139,19 @@
   visibility: hidden;
   pointer-events: none;
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
-  }
-  .modal-form__input {
-    width: 448px;
-  }
-  .modal-form__textarea {
-    width: 448px;
+    &-form__input {
+      width: 448px;
+    }
+    &-form__textarea {
+      width: 448px;
+    }
   }
 }
